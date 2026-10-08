@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RivalRadar</title>
+  <link rel="icon" href="/favicon.ico">
+  <script>try{var t=localStorage.getItem('rr_theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <div id="app">
+    <aside id="side">
+      <div class="brand">
+        <div class="brand-logo">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2"/></svg>
+        </div>
+        <div class="brand-t"><b>RivalRadar</b><span>competitor intel</span></div>
+      </div>
+      <nav id="nav"></nav>
+      <div class="side-foot"><button id="themeBtn" class="btn quiet sm" type="button"></button><span id="ver"></span></div>
+    </aside>
+    <div id="backdrop" onclick="toggleSide(false)"></div>
+    <main>
+      <header class="top">
+        <button class="icon-btn menu" id="menuBtn" type="button" aria-label="Menu">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+        <div class="ttl-wrap"><h1 id="ttl">Dashboard</h1><span id="tsub" class="sub"></span></div>
+        <div id="top-actions" class="top-actions"></div>
+      </header>
+      <div id="view" class="content"></div>
+    </main>
+  </div>
+  <div id="toasts"></div>
+  <div id="modal-root"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

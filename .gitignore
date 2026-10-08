@@ -1,0 +1,12 @@
+data/
+*.db
+*.db-wal
+*.db-shm
+*.log
+__pycache__/
+*.pyc
+build_embed/
+build_cache/
+installer_output/
+.installed
+port.txt
